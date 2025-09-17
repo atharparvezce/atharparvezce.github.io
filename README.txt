@@ -1,10 +1,6 @@
-How to deploy to GitHub Pages (user/atharparvez.github.io):
+# 🌐 Athar Parvez — Personal Portfolio Website
 
-1) Create a new repository named: atharparvez.github.io
-2) Upload the contents of this folder to the repository root (index.html at top level).
-3) Commit & push. GitHub Pages will serve it at: https://atharparvez.github.io
-4) To customize:
-   - Replace GitHub/LinkedIn links in index.html with your actual profiles.
-   - Add your CV PDF as Athar_Parvez_CV.pdf in the root (or update the link in the Contact section).
-   - Update project "Repo" links to point to your repos.
-5) Optional: Set a custom domain in repo Settings → Pages.
+This repository hosts my personal portfolio website, powered by **GitHub Pages**.  
+It showcases my background, skills, experience, publications, and selected projects in AI/ML.  
+
+🔗 Live Site: [https://atharparvezce.github.io](https://atharparvezce.github.io)
