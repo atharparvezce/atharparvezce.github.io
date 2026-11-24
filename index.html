@@ -36,11 +36,11 @@ h1{font-size:clamp(38px,6vw,68px);line-height:1.05;letter-spacing:-.035em;margin
 .g{background:var(--grad);-webkit-background-clip:text;color:transparent}
 .lede{font-size:18px;color:var(--sub);max-width:560px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
 .soc{display:flex;gap:18px;color:var(--sub);font-size:14px;flex-wrap:wrap}.soc a:hover{color:var(--a1)}
-.photo{position:relative;max-width:340px;margin-inline:auto}.photo:before{content:"";position:absolute;inset:-3px;border-radius:28px;background:var(--grad);filter:blur(22px);opacity:.45}
-.photo img{position:relative;width:100%;aspect-ratio:1;object-fit:cover;border-radius:26px;border:1px solid var(--bd);display:block}
+.photo{position:relative;max-width:400px;margin-inline:auto}.photo:before{content:"";position:absolute;left:8%;right:8%;top:12%;bottom:0;border-radius:50%;background:var(--grad);filter:blur(60px);opacity:.38}
+.photo img{position:relative;width:100%;height:auto;display:block;filter:drop-shadow(0 20px 40px rgba(0,0,0,.45));-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent)}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
 .stat,.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:22px;transition:.25s}
-.stat b{display:block;font-size:34px;letter-spacing:-.03em}.stat span{color:var(--sub);font-size:14px}
+.stat b{display:block;font-size:34px;line-height:1.2;letter-spacing:-.03em;font-variant-numeric:tabular-nums}.stat b span{font-size:inherit;color:inherit}.stat>span{color:var(--sub);font-size:14px}
 section{padding:80px 0}.alt{background:var(--bg2);border-block:1px solid var(--bd)}
 .eyebrow{font-size:13px;color:var(--a2);letter-spacing:.12em;text-transform:uppercase}
 h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.03em;margin:8px 0 36px;line-height:1.15}
@@ -82,13 +82,13 @@ footer{border-top:1px solid var(--bd);padding:28px 0;text-align:center;color:var
 <main id="top">
 <section class="hero"><div class="wrap">
   <div>
-    <span class="pill"><i class="dot"></i> Available for PhD &amp; research roles · Dhahran, KSA</span>
+    <span class="pill">📍 Dhahran, Saudi Arabia</span>
     <h1>Building <span class="g">production-grade GenAI</span> that people actually trust.</h1>
     <p class="lede">I’m Athar — a GenAI &amp; ML Engineer with 4 years across AWS, GCP and Azure. I ship enterprise RAG assistants, fine-tune LLMs, and publish multimodal research on mobile UI understanding.</p>
     <div class="cta"><a class="btn p" href="#projects">View projects →</a><a class="btn" href="assets/cv/Athar_CV.pdf" target="_blank" rel="noopener">Download CV</a></div>
     <div class="soc mono"><a href="mailto:atharparvezce@gmail.com">email</a><a href="https://github.com/atharparvezce" target="_blank" rel="noopener">github</a><a href="https://linkedin.com/in/atharparvezce" target="_blank" rel="noopener">linkedin</a><a href="https://huggingface.co/atharparvezce" target="_blank" rel="noopener">hugging face</a></div>
   </div>
-  <div class="photo"><img src="assets/img/profile.png" alt="Athar Parvez" width="340" height="340"></div>
+  <div class="photo"><img src="assets/img/profile.png" alt="Athar Parvez" width="400" height="400"></div>
 </div>
 <div class="wrap stats">
   <div class="stat rv"><b><span data-n="4">0</span>+</b><span>Years in production ML</span></div>
@@ -98,15 +98,15 @@ footer{border-top:1px solid var(--bd);padding:28px 0;text-align:center;color:var
 </div></section>
 
 <section id="about"><div class="wrap">
-  <div class="eyebrow mono">// about</div><h2>Research depth, engineering discipline.</h2>
+  <div class="eyebrow mono">// about</div><h2>From prototype to production.</h2>
   <div class="about rv">
     <div>
-      <p>I design GenAI systems end to end — from ingestion and retrieval to grounded generation, evaluation, and monitoring. At <strong>King Fahd Causeway Authority</strong> I run an enterprise RAG assistant on <strong>Azure AI Foundry</strong> for 200+ employees, alongside an enterprise data-governance program on <strong>Informatica CDGC</strong>.</p>
-      <p>Before that I spent three years at <strong>Tata Consultancy Services</strong> shipping fraud-detection, churn, and LLM fine-tuning (LoRA/QLoRA) models to production on AWS and GCP.</p>
+      <p>I’m a <strong>GenAI &amp; ML Engineer</strong> with 4 years of experience turning machine learning into systems businesses rely on. I own the full lifecycle: data, retrieval, modeling, evaluation, deployment, and monitoring.</p>
+      <p>At <strong>King Fahd Causeway Authority</strong>, I built an enterprise RAG assistant on <strong>Azure AI Foundry</strong> used by 200+ employees, and I lead an enterprise data-governance program on <strong>Informatica CDGC</strong> covering 150+ data assets.</p>
     </div>
     <div>
-      <p>My <strong>M.S. thesis at KFUPM</strong> produced MUIAnno, an expert-annotated mobile UI benchmark, and an MLLM workflow-decomposition framework for automated annotation — both released as arXiv preprints.</p>
-      <p>I care about measurable quality: faithfulness, retrieval precision, F1, latency. If it can’t be evaluated, it isn’t finished.</p>
+      <p>At <strong>Tata Consultancy Services</strong>, I spent three years shipping fraud detection, churn prediction, and LoRA/QLoRA fine-tuned LLMs to production on <strong>AWS and GCP</strong>, serving financial-services clients.</p>
+      <p>I work to measurable targets: faithfulness, precision, F1, latency, and data quality. If it can’t be measured, monitored, and maintained, it isn’t finished.</p>
     </div>
   </div>
 </div></section>
@@ -178,7 +178,7 @@ footer{border-top:1px solid var(--bd);padding:28px 0;text-align:center;color:var
 
 <section id="contact"><div class="wrap contact">
   <div class="eyebrow mono">// contact</div><h2>Let’s build something <span class="g">intelligent</span>.</h2>
-  <p>Open to PhD positions, research collaborations, and GenAI engineering roles.</p>
+  <p>Open to GenAI engineering roles, consulting, and research collaborations.</p>
   <div class="cta"><a class="btn p" href="mailto:atharparvezce@gmail.com">atharparvezce@gmail.com</a><a class="btn" href="https://linkedin.com/in/atharparvezce" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/atharparvezce" target="_blank" rel="noopener">GitHub</a></div>
 </div></section>
 </main>
