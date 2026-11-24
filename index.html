@@ -1,298 +1,206 @@
 <!doctype html>
-<html lang="en" class="light">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Athar Parvez — AI/ML Engineer & Researcher</title>
-  <meta name="description" content="Portfolio of Athar Parvez — AI/ML Engineer & Research Assistant. NLP, CV, LLMs, RAG, MLOps, AWS." />
-  <meta property="og:title" content="Athar Parvez — AI/ML Engineer & Researcher" />
-  <meta property="og:description" content="NLP • CV • LLMs • RAG • MLOps • AWS" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/img/og-image.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="assets/img/favicon.png" />
-  <script defer src="assets/js/main.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Athar Parvez — GenAI & ML Engineer</title>
+<meta name="description" content="Athar Parvez — GenAI & ML Engineer. Enterprise RAG on Azure AI Foundry, LLM fine-tuning, multimodal research, and the MUIAnno / iOS-1K dataset (11K+ downloads).">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Athar Parvez — GenAI & ML Engineer">
+<meta property="og:description" content="Enterprise RAG • LLM fine-tuning • Multimodal research • MLOps">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://atharparvezce.github.io/assets/img/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%236366f1'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='800' fill='white' text-anchor='middle'%3EAP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--bg2:#09090b;--card:rgba(255,255,255,.04);--bd:rgba(255,255,255,.09);--tx:#fafafa;--sub:#a1a1aa;--a1:#818cf8;--a2:#22d3ee;--grad:linear-gradient(135deg,#6366f1,#22d3ee)}
+:root[data-theme=light]{--bg:#fafafa;--bg2:#fff;--card:#fff;--bd:rgba(0,0,0,.1);--tx:#09090b;--sub:#52525b;--a1:#4f46e5;--a2:#0891b2;--grad:linear-gradient(135deg,#4f46e5,#0891b2)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.mono{font-family:'JetBrains Mono',monospace}
+.glow{position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(600px 400px at 85% 5%,rgba(99,102,241,.18),transparent),radial-gradient(500px 400px at 5% 40%,rgba(34,211,238,.1),transparent)}
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 75%,transparent);border-bottom:1px solid var(--bd)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;letter-spacing:-.02em}.logo b{background:var(--grad);-webkit-background-clip:text;color:transparent}
+nav{display:flex;gap:22px;align-items:center;font-size:14px;color:var(--sub)}nav a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:12px;font-weight:600;font-size:15px;border:1px solid var(--bd);cursor:pointer;background:transparent;color:var(--tx);transition:.2s}
+.btn.p{background:var(--grad);color:#fff;border:0}.btn:hover{transform:translateY(-2px)}
+#theme,#menu{background:none;border:1px solid var(--bd);color:var(--tx);border-radius:10px;width:38px;height:38px;cursor:pointer;font-size:16px}#menu{display:none}
+.hero{padding:88px 0 56px}.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--bd);background:var(--card);padding:6px 14px;border-radius:99px;font-size:13px;color:var(--sub)}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.05;letter-spacing:-.035em;margin:20px 0 18px;font-weight:800}
+.g{background:var(--grad);-webkit-background-clip:text;color:transparent}
+.lede{font-size:18px;color:var(--sub);max-width:560px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.soc{display:flex;gap:18px;color:var(--sub);font-size:14px;flex-wrap:wrap}.soc a:hover{color:var(--a1)}
+.photo{position:relative;max-width:340px;margin-inline:auto}.photo:before{content:"";position:absolute;inset:-3px;border-radius:28px;background:var(--grad);filter:blur(22px);opacity:.45}
+.photo img{position:relative;width:100%;aspect-ratio:1;object-fit:cover;border-radius:26px;border:1px solid var(--bd);display:block}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
+.stat,.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:22px;transition:.25s}
+.stat b{display:block;font-size:34px;letter-spacing:-.03em}.stat span{color:var(--sub);font-size:14px}
+section{padding:80px 0}.alt{background:var(--bg2);border-block:1px solid var(--bd)}
+.eyebrow{font-size:13px;color:var(--a2);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.03em;margin:8px 0 36px;line-height:1.15}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;color:var(--sub)}.about p{margin:0 0 14px}.about strong{color:var(--tx)}
+.tl{border-left:2px solid var(--bd);margin-left:6px}.ti{position:relative;padding:0 0 36px 28px}
+.ti:before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--grad);box-shadow:0 0 0 4px var(--bg)}
+.ti h3{margin:0;font-size:20px}.ti .m{color:var(--sub);font-size:14px;margin:2px 0 10px}.ti ul{margin:0;padding-left:18px;color:var(--sub)}.ti li{margin:6px 0}.ti li b{color:var(--tx);font-weight:600}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:-12px 0 24px}.filters button{font:inherit;font-size:14px;padding:7px 16px;border-radius:99px;border:1px solid var(--bd);background:transparent;color:var(--sub);cursor:pointer}
+.filters button.on{background:var(--grad);color:#fff;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.proj{display:flex;flex-direction:column}
+.card:hover,.stat:hover{border-color:var(--a1);transform:translateY(-4px)}
+.proj .tag{font-size:12px;color:var(--a2)}.proj h3{margin:8px 0;font-size:18px;line-height:1.3}.proj p{color:var(--sub);font-size:14.5px;margin:0 0 14px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.chips span{font-size:12px;padding:3px 10px;border-radius:99px;border:1px solid var(--bd);color:var(--sub)}
+.links{display:flex;gap:14px;margin-top:14px;font-size:14px;font-weight:600}.links a{color:var(--a1)}.links a:hover{text-decoration:underline}
+.proj.hide{display:none}
+.feat{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-bottom:18px;background:linear-gradient(135deg,rgba(99,102,241,.14),rgba(34,211,238,.06)),var(--card)}
+.feat .big{font-size:56px;font-weight:800;letter-spacing:-.04em}.feat p{color:var(--sub)}
+.sk{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.sk h3{margin:0 0 12px;font-size:15px;color:var(--a2)}.sk .chips{margin:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.two h3{margin:0 0 4px}.two p{margin:0 0 14px;color:var(--sub);font-size:14.5px}
+.contact{text-align:center}.contact p{color:var(--sub);max-width:520px;margin:0 auto 28px}.contact .cta{justify-content:center}
+footer{border-top:1px solid var(--bd);padding:28px 0;text-align:center;color:var(--sub);font-size:14px}
+.rv{opacity:0;transform:translateY(24px);transition:.7s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){.hero .wrap,.about,.feat,.two{grid-template-columns:1fr}.grid,.sk{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.photo{max-width:260px;order:-1}
+#menu{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--bg2);padding:20px;border-bottom:1px solid var(--bd)}nav.open{display:flex}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+<div class="glow"></div>
+<header><div class="wrap">
+  <a href="#top" class="logo">athar<b>.parvez</b></a>
+  <nav id="nav">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    <button id="theme" aria-label="Toggle theme">🌓</button>
+  </nav>
+  <button id="menu" aria-label="Menu">☰</button>
+</div></header>
 
-  <header class="site-header wrap">
-    <div class="brand">
-      <span class="logo">AP</span>
-      <div class="brand-text">
-        <h1 class="brand-title">Athar Parvez</h1>
-        <p class="brand-sub">AI/ML Engineer & Research Assistant</p>
-      </div>
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="pill"><i class="dot"></i> Available for PhD &amp; research roles · Dhahran, KSA</span>
+    <h1>Building <span class="g">production-grade GenAI</span> that people actually trust.</h1>
+    <p class="lede">I’m Athar — a GenAI &amp; ML Engineer with 4 years across AWS, GCP and Azure. I ship enterprise RAG assistants, fine-tune LLMs, and publish multimodal research on mobile UI understanding.</p>
+    <div class="cta"><a class="btn p" href="#projects">View projects →</a><a class="btn" href="assets/cv/Athar_CV.pdf" target="_blank" rel="noopener">Download CV</a></div>
+    <div class="soc mono"><a href="mailto:atharparvezce@gmail.com">email</a><a href="https://github.com/atharparvezce" target="_blank" rel="noopener">github</a><a href="https://linkedin.com/in/atharparvezce" target="_blank" rel="noopener">linkedin</a><a href="https://huggingface.co/atharparvezce" target="_blank" rel="noopener">hugging face</a></div>
+  </div>
+  <div class="photo"><img src="assets/img/profile.png" alt="Athar Parvez" width="340" height="340"></div>
+</div>
+<div class="wrap stats">
+  <div class="stat rv"><b><span data-n="4">0</span>+</b><span>Years in production ML</span></div>
+  <div class="stat rv"><b><span data-n="11">0</span>K+</b><span>Dataset downloads on Hugging Face</span></div>
+  <div class="stat rv"><b><span data-n="2">0</span></b><span>arXiv preprints (2026)</span></div>
+  <div class="stat rv"><b><span data-n="150">0</span>+</b><span>Data assets governed at KFCA</span></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="eyebrow mono">// about</div><h2>Research depth, engineering discipline.</h2>
+  <div class="about rv">
+    <div>
+      <p>I design GenAI systems end to end — from ingestion and retrieval to grounded generation, evaluation, and monitoring. At <strong>King Fahd Causeway Authority</strong> I run an enterprise RAG assistant on <strong>Azure AI Foundry</strong> for 200+ employees, alongside an enterprise data-governance program on <strong>Informatica CDGC</strong>.</p>
+      <p>Before that I spent three years at <strong>Tata Consultancy Services</strong> shipping fraud-detection, churn, and LLM fine-tuning (LoRA/QLoRA) models to production on AWS and GCP.</p>
     </div>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#education">Education</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact" class="btn">Contact</a>
-      <button id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">🌓</button>
-    </nav>
-  </header>
+    <div>
+      <p>My <strong>M.S. thesis at KFUPM</strong> produced MUIAnno, an expert-annotated mobile UI benchmark, and an MLLM workflow-decomposition framework for automated annotation — both released as arXiv preprints.</p>
+      <p>I care about measurable quality: faithfulness, retrieval precision, F1, latency. If it can’t be evaluated, it isn’t finished.</p>
+    </div>
+  </div>
+</div></section>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="wrap">
-        <div class="hero-inner">
-          <div class="hero-copy">
-            <h2>Transforming data into intelligent ML solutions at scale</h2>
-            <p class="lede">
-              4+ years delivering <strong>LLMs</strong>, <strong>RAG</strong>, and <strong>ML</strong> models end‑to‑end — from data to deployment.
-              Experienced with <strong>Python</strong>, <strong>PyTorch/TensorFlow</strong>, <strong>LangChain</strong>, and <strong>AWS</strong>.
-            </p>
-            <div class="cta-row">
-              <a class="btn" href="#projects">View Projects</a>
-              <a class="btn ghost" href="#contact">Get in touch</a>
-            </div>
-            <ul class="meta">
-              <li>📍 Dhahran, KSA</li>
-              <li>📧 <a href="mailto:atharparvezce@gmail.com">atharparvezce@gmail.com</a></li>
-              <li>🔗 <a href="https://github.com/atharparvezce" target="_blank" rel="noopener">GitHub</a> · <a href="https://linkedin.com/in/atharparvezce" target="_blank" rel="noopener">LinkedIn</a></li>
-            </ul>
-          </div>
-          <div class="hero-card">
-            <div class="card">
-              <h3>Core Focus</h3>
-              <ul class="tags">
-                <li>LLM Fine‑tuning (LoRA/QLoRA)</li>
-                <li>RAG Pipelines</li>
-                <li>MLOps (Docker, MLflow)</li>
-                <li>NLP • CV</li>
-                <li>LangChain / LangGraph</li>
-                <li>AWS</li>
-              </ul>
-              <p class="note">Open to collaborations and research partnerships.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="experience" class="alt"><div class="wrap">
+  <div class="eyebrow mono">// experience</div><h2>Where I’ve shipped.</h2>
+  <div class="tl">
+    <div class="ti rv"><h3>Data Governance &amp; Data Scientist · King Fahd Causeway Authority</h3><div class="m mono">Jun 2026 – Present · Saudi Arabia</div><ul>
+      <li>Designed and deployed an enterprise <b>RAG assistant on Azure AI Foundry</b> for 200+ employees, with document ingestion, retrieval, and grounded answer generation.</li>
+      <li>Built evaluation controls with <b>RAGAS</b> (85% faithfulness) plus monitoring of usage, retrieval quality, and failure cases.</li>
+      <li>Cataloged <b>150+ data assets across 9 domains</b> in Informatica CDGC, with lineage, 30+ glossary terms, and DQ rules lifting scores <b>67% → 88%</b>.</li>
+      <li>Defined ownership and stewardship with 5 departments, aligned to NDMO requirements.</li></ul></div>
+    <div class="ti rv"><h3>Data Scientist · Tata Consultancy Services</h3><div class="m mono">Apr 2021 – Jan 2024 · Gurugram, India</div><ul>
+      <li>Fraud &amp; anomaly detection: <b>+23% precision</b> over baseline via feature engineering and optimization.</li>
+      <li>Churn models (XGBoost, LSTM) on 20K+ users: <b>92% F1</b>, 28% better early detection, SHAP-driven insights.</li>
+      <li>Fine-tuned transformer LLMs (LoRA/QLoRA) for financial document extraction: <b>90% F1</b>.</li>
+      <li>Built end-to-end pipelines on AWS SageMaker and GCP Vertex AI for 5 production models.</li></ul></div>
+    <div class="ti rv"><h3>M.S. Computer Science · KFUPM</h3><div class="m mono">Jan 2024 – May 2026 · Fully funded merit scholarship · GPA 3.4/4.0</div><ul>
+      <li>Thesis: AI-powered system for multilingual UI understanding and annotation.</li></ul></div>
+  </div>
+</div></section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="wrap">
-        <h2>About</h2>
-        <p>
-          AI/ML Engineer & Research Assistant(4+ years). Deploying ML models and LLM solutions to production. Cut
-          churn for Drahim a Saudi fintech with predictive modeling using ML; delivered RAG chatbots and fine-tuned
-          LLMs. Expertise in Python, PyTorch/TensorFlow, LangChain, and AWS (Docker, MLflow); fluent in NLP/CV, 
-          end-to-end pipelines, and MLOps best practices.Open for PhD roles.
-      </div>
-    </section>
+<section id="projects"><div class="wrap">
+  <div class="eyebrow mono">// projects</div><h2>Selected work.</h2>
+  <div class="filters" id="filters"><button class="on" data-f="all">All</button><button data-f="genai">GenAI</button><button data-f="research">Research</button><button data-f="ml">ML</button></div>
+  <div class="grid">
+    <article class="card proj rv" data-c="genai"><div class="tag mono">KFCA · GenAI</div><h3>Enterprise RAG Assistant</h3><p>Azure AI Foundry assistant serving 200+ employees with grounded answers, RAGAS evaluation (85% faithfulness), and retrieval-quality monitoring.</p><div class="chips"><span>Azure AI Foundry</span><span>Azure AI Search</span><span>RAGAS</span></div></article>
+    <article class="card proj rv" data-c="ml"><div class="tag mono">KFCA · Data</div><h3>Enterprise Data Governance</h3><p>Catalog of 150+ assets across 9 domains with lineage and quality rules that raised DQ scores from 67% to 88%.</p><div class="chips"><span>Informatica CDGC</span><span>Lineage</span><span>NDMO</span></div></article>
+    <article class="card proj rv" data-c="research genai"><div class="tag mono">Thesis · Research</div><h3>MUIAnno Dataset &amp; Benchmark</h3><p>Expert-annotated iOS UI dataset with structured JSON labels, plus detection benchmarks and error analysis.</p><div class="chips"><span>Dataset</span><span>Benchmark</span><span>HCI</span></div><div class="links"><a href="https://arxiv.org/abs/2605.17656" target="_blank" rel="noopener">arXiv ↗</a><a href="https://huggingface.co/datasets/atharparvezce/iOS-1K-Mobile-UI-Dataset" target="_blank" rel="noopener">Dataset ↗</a></div></article>
+    <article class="card proj rv" data-c="research genai"><div class="tag mono">Thesis · Research</div><h3>MLLM Workflow Decomposition</h3><p>n8n pipeline over 2,000+ screens from 200+ apps; compared 1-, 2-, 4- and 8-step annotation with schema-constrained JSON outputs.</p><div class="chips"><span>Multimodal LLMs</span><span>n8n</span><span>EN–AR</span></div><div class="links"><a href="https://arxiv.org/abs/2606.02208" target="_blank" rel="noopener">arXiv ↗</a></div></article>
+    <article class="card proj rv" data-c="ml"><div class="tag mono">TCS · ML</div><h3>Churn Prediction Engine</h3><p>XGBoost + LSTM on a 30-day window and 40+ features across 20K+ users: 92% F1, +28% early detection, SHAP-explained.</p><div class="chips"><span>XGBoost</span><span>LSTM</span><span>SHAP</span></div></article>
+    <article class="card proj rv" data-c="genai"><div class="tag mono">TCS · GenAI</div><h3>Financial Document LLM Fine-Tuning</h3><p>LoRA/QLoRA fine-tuned transformers extracting key fields from financial documents at 90% F1.</p><div class="chips"><span>LoRA</span><span>QLoRA</span><span>Transformers</span></div></article>
+    <article class="card proj rv" data-c="ml"><div class="tag mono">TCS · ML</div><h3>Fraud &amp; Anomaly Detection</h3><p>Production ML/DL models improving precision by 23% over the prior baseline.</p><div class="chips"><span>Feature engineering</span><span>AWS</span><span>GCP</span></div></article>
+    <article class="card proj rv" data-c="ml"><div class="tag mono">TCS · Edge AI</div><h3>Multimodal Engagement Monitor</h3><p>Computer vision + audio system for real-time monitoring; 40% faster edge inference, 35% lower latency/memory via TFLite &amp; ONNX.</p><div class="chips"><span>TensorFlow Lite</span><span>ONNX</span><span>OpenCV</span></div></article>
+  </div>
+</div></section>
 
-    <!-- Skills -->
-    <section id="skills" class="section muted">
-      <div class="wrap">
-        <h2>Skills</h2>
-        <div class="grid-3">
-          <div>
-            <h3>Machine Learning & DL</h3>
-            <ul class="tags">
-              <li>Python</li><li>Scikit‑learn</li><li>TensorFlow</li><li>PyTorch</li><li>Keras</li>
-              <li>OpenCV</li><li>Feature Engineering</li><li>Optuna</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Generative AI</h3>
-            <ul class="tags">
-              <li>LLMs</li><li>RAG</li><li>LangChain</li><li>LangGraph</li>
-              <li>LoRA</li><li>QLoRA</li><li>Prompt Engineering</li><li>HuggingFace</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Platforms & Tools</h3>
-            <ul class="tags">
-              <li>AWS</li><li>Docker</li><li>MLflow</li><li>n8n</li><li>Zapier</li><li>LangFlow</li>
-              <li>MongoDB</li><li>MySQL</li><li>Oracle</li><li>Git</li>
-              <li>FastAPI</li><li>Flask</li><li>Streamlit</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="research" class="alt"><div class="wrap">
+  <div class="eyebrow mono">// research &amp; open source</div><h2>Impact beyond the repo.</h2>
+  <div class="card feat rv">
+    <div><div class="tag mono" style="color:var(--a2);font-size:12px">HUGGING FACE · OPEN DATASET</div><h3 style="font-size:24px;margin:8px 0">iOS-1K Mobile UI Dataset</h3><p>Publicly released as part of MUIAnno to support mobile UI understanding, GUI agents, and multimodal AI research.</p><div class="links"><a href="https://huggingface.co/datasets/atharparvezce/iOS-1K-Mobile-UI-Dataset" target="_blank" rel="noopener">View dataset ↗</a></div></div>
+    <div><div class="big g">11K+</div><p style="margin:0">downloads by researchers and developers worldwide</p></div>
+  </div>
+  <div class="two">
+    <div class="card rv"><h3>MUIAnno: An Expert-Annotated Dataset and Evaluation Benchmark for Mobile UI Understanding</h3><p>Parvez, Mufti, Gull, Hammad · arXiv 2605.17656 · 2026</p><div class="links"><a href="https://arxiv.org/abs/2605.17656" target="_blank" rel="noopener">Read paper ↗</a></div></div>
+    <div class="card rv"><h3>Context-Aware Workflow Decomposition for Automated Mobile UI Annotation Using MLLMs</h3><p>Parvez, Mufti, Gull, Hammad · arXiv 2606.02208 · 2026</p><div class="links"><a href="https://arxiv.org/abs/2606.02208" target="_blank" rel="noopener">Read paper ↗</a></div></div>
+  </div>
+</div></section>
 
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <div class="wrap">
-        <h2>Experience</h2>
+<section id="skills"><div class="wrap">
+  <div class="eyebrow mono">// skills</div><h2>Toolbox.</h2>
+  <div class="sk">
+    <div class="card rv"><h3>Generative AI</h3><div class="chips"><span>RAG</span><span>LLM Fine-Tuning</span><span>LoRA/QLoRA</span><span>RAGAS</span><span>Prompt Engineering</span><span>Hallucination Mitigation</span></div></div>
+    <div class="card rv"><h3>Agents &amp; Orchestration</h3><div class="chips"><span>LangGraph</span><span>LangChain</span><span>n8n</span><span>Dataiku</span><span>Workflow Decomposition</span></div></div>
+    <div class="card rv"><h3>Azure &amp; Cloud</h3><div class="chips"><span>Azure AI Foundry</span><span>Azure OpenAI</span><span>Azure AI Search</span><span>Databricks</span><span>ADLS</span><span>AWS SageMaker</span><span>GCP Vertex AI</span></div></div>
+    <div class="card rv"><h3>MLOps &amp; Monitoring</h3><div class="chips"><span>Docker</span><span>MLflow</span><span>CI/CD</span><span>ONNX</span><span>TF Lite</span><span>App Insights</span></div></div>
+    <div class="card rv"><h3>ML &amp; Deep Learning</h3><div class="chips"><span>PyTorch</span><span>TensorFlow</span><span>XGBoost</span><span>LightGBM</span><span>Transformers</span><span>LSTM</span><span>SHAP</span><span>OpenCV</span></div></div>
+    <div class="card rv"><h3>Languages &amp; Data</h3><div class="chips"><span>Python</span><span>SQL</span><span>Java</span><span>C++</span><span>Pandas</span><span>Power BI</span><span>Streamlit</span><span>Informatica CDGC</span></div></div>
+  </div>
+</div></section>
 
-        <div class="timeline">
-          <article class="titem">
-            <header>
-              <h3>Research Assistant <span>@ KFUPM</span></h3>
-              <div class="time">Jan 2025 – Present</div>
-            </header>
-            <ul>
-              <li>Advanced ML research; designed experiments and analyzed large‑scale datasets.</li>
-              <li>Built with PyTorch, TensorFlow, Scikit‑learn, PySpark, and more.</li>
-              <li>Produced technical docs, reports, and presentations; mentored undergrads.</li>
-            </ul>
-          </article>
+<section class="alt"><div class="wrap">
+  <div class="eyebrow mono">// education &amp; recognition</div><h2>Foundations.</h2>
+  <div class="two">
+    <div class="card rv"><h3>M.S. Computer Science — KFUPM</h3><p>Dhahran, KSA · Jan 2024 – May 2026 · GPA 3.4/4.0</p><h3>B.Tech Computer Science — MANUU</h3><p style="margin:0">Hyderabad, India · 2016 – 2020 · GPA 3.5/4.0</p></div>
+    <div class="card rv"><h3>KAUST AI Specialization</h3><p>Top 100 of 17,000+ applicants (&lt;1%) — ML, NLP, CV, GNNs, RL.</p><h3>KFUPM Fully Funded Scholarship</h3><p style="margin:0">Merit-based: tuition + monthly stipend.</p></div>
+  </div>
+</div></section>
 
-          <article class="titem">
-            <header>
-              <h3>Machine Learning Intern <span>@ SkillCraft Technology</span></h3>
-              <div class="time">Sep 2025</div>
-            </header>
-            <ul>
-              <li>Data collection/cleaning; baseline models; hyperparameter tuning and eval.</li>
-              <li>Hands‑on with end‑to‑end ML workflow.</li>
-            </ul>
-          </article>
+<section id="contact"><div class="wrap contact">
+  <div class="eyebrow mono">// contact</div><h2>Let’s build something <span class="g">intelligent</span>.</h2>
+  <p>Open to PhD positions, research collaborations, and GenAI engineering roles.</p>
+  <div class="cta"><a class="btn p" href="mailto:atharparvezce@gmail.com">atharparvezce@gmail.com</a><a class="btn" href="https://linkedin.com/in/atharparvezce" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/atharparvezce" target="_blank" rel="noopener">GitHub</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span id="yr"></span> Athar Parvez · Dhahran, Saudi Arabia</div></footer>
 
-          <article class="titem">
-            <header>
-              <h3>Teaching Assistant <span>@ KFUPM</span></h3>
-              <div class="time">Jan 2024 – Jan 2025</div>
-            </header>
-            <ul>
-              <li>Taught C and Python to ~60 students/semester; led labs and graded assignments.</li>
-            </ul>
-          </article>
-
-          <article class="titem">
-            <header>
-              <h3>AI/ML Engineer (3 yrs) <span>@ Tata Consultancy Services</span></h3>
-              <div class="time">Apr 2021 – Jan 2024</div>
-            </header>
-            <ul>
-              <li>Deployed ML/DL & LLM models for finance: classification, prediction, anomaly detection.</li>
-              <li>Fine‑tuned pre‑trained models (LoRA/QLoRA); shipped production pipelines on AWS.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section muted">
-      <div class="wrap">
-        <h2>Selected Projects</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Churn Prediction for Fintech Retention</h3>
-            <p>Developed churn models for Drahim (Saudi fintech) to identify at‑risk customers and guide retention strategies.</p>
-            <p class="stack">Python • Scikit‑learn • Tableau/Power BI • AWS</p>
-          </article>
-
-          <article class="card">
-            <h3>Purchase Order Item Categorization</h3>
-            <p>Multilingual embeddings + clustering pipeline for spend analysis and improved categorization accuracy.</p>
-            <p class="stack">Python • Embeddings • Clustering • NLP</p>
-            <a class="btn small" href="#" target="_blank" rel="noopener">Repo</a>
-          </article>
-
-          <article class="card">
-            <h3>Duplicate Question Detection (Quora)</h3>
-            <p>NLP pipeline using token/fuzzy/semantic features; Streamlit app deployed on Heroku.</p>
-            <p class="stack">Python • NLP • Streamlit</p>
-            <a class="btn small" href="#" target="_blank" rel="noopener">Repo</a>
-          </article>
-
-          <article class="card">
-            <h3>iArabUI: Arabic iOS UI Dataset</h3>
-            <p>LLM‑assisted labeling to advance accessibility, HCI, and intelligent UI design.</p>
-            <p class="stack">LLMs • HCI • Data Engineering</p>
-            <a class="btn small" href="#" target="_blank" rel="noopener">Repo</a>
-          </article>
-
-          <article class="card">
-            <h3>YouTube RAG Chatbot</h3>
-            <p>RAG system over YouTube transcripts (FAISS/Chroma) with OpenAI/HF LLMs.</p>
-            <p class="stack">RAG • FAISS/Chroma • LangChain</p>
-            <a class="btn small" href="#" target="_blank" rel="noopener">Repo</a>
-          </article>
-
-          <article class="card">
-            <h3>TCS BaNCS Predictive Analytics</h3>
-            <p>ML/LLM microservices for financial services; SQL pipelines; Docker/K8s on AWS.</p>
-            <p class="stack">Docker • Kubernetes • AWS</p>
-            <a class="btn small" href="#" target="_blank" rel="noopener">Repo</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Publications -->
-    <section id="publications" class="section">
-      <div class="wrap">
-        <h2>Publications</h2>
-        <ul class="pubs">
-          <li><strong>Generalizable Diabetes Risk Stratification via Hybrid Machine Learning Models</strong> — Submitted to <em>Journal of Diabetes and Its Complications</em> (Q1), First author.</li>
-          <li><strong>Usability Requirements Catalog for Modeling Dynamic User Interactions in Mobile Applications</strong> — Graph‑based catalog validated with experts.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="section muted">
-      <div class="wrap">
-        <h2>Education</h2>
-        <ul class="edu">
-          <li><strong>MSc, Computer Science</strong> — King Fahd University of Petroleum and Minerals (KFUPM), 2024–present.</li>
-          <li><strong>BSc, Computer Science</strong> — Maulana Azad National Urdu University, 2016–2020.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="section">
-      <div class="wrap">
-        <h2>Certifications</h2>
-        <ul class="certs">
-          <li>LangChain for LLM Application Development — DeepLearning.AI (2025)</li>
-          <li>Finetuning Large Language Models — DeepLearning.AI (2025)</li>
-          <li>Generative AI for Everyone — DeepLearning.AI (2025)</li>
-          <li>AI Agents in LangGraph — DeepLearning.AI (2025)</li>
-          <li>Python Basics — University of Michigan (2024)</li>
-          <li>n8n Course: No Code AI Agent Builder — Simplilearn (2025)</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section contact">
-      <div class="wrap">
-        <h2>Contact</h2>
-        <p>Want to collaborate or chat about research and applied AI? Reach out!</p>
-        <div class="contact-grid">
-          <a class="contact-card" href="mailto:atharparvezce@gmail.com">
-            <span class="icon">✉️</span>
-            <span>Email</span>
-          </a>
-          <a class="contact-card" href="https://github.com/atharparvezce" target="_blank" rel="noopener">
-            <span class="icon">💻</span>
-            <span>GitHub</span>
-          </a>
-          <a class="contact-card" href="https://linkedin.com/in/atharparvezce" target="_blank" rel="noopener">
-            <span class="icon">🔗</span>
-            <span>LinkedIn</span>
-          </a>
-          <a class="contact-card" href="assets/cv/Athar_CV.pdf" target="_blank" rel="noopener">
-            <span class="icon">📄</span>
-            <span>Download CV</span>
-          </a>
-          
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="wrap">
-        <p>© <span id="year"></span> Athar Parvez • Built with vanilla HTML/CSS/JS • Hosted on GitHub Pages</p>
-      </div>
-    </footer>
-  </main>
+<script>
+(function(){
+var r=document.documentElement,$=function(s){return document.querySelector(s)},all=function(s){return[].slice.call(document.querySelectorAll(s))};
+try{var t=localStorage.getItem('theme');if(t)r.dataset.theme=t}catch(e){}
+$('#theme').onclick=function(){var n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('theme',n)}catch(e){}};
+$('#menu').onclick=function(){$('#nav').classList.toggle('open')};
+all('#nav a').forEach(function(a){a.onclick=function(){$('#nav').classList.remove('open')}});
+$('#yr').textContent=new Date().getFullYear();
+all('#filters button').forEach(function(b){b.onclick=function(){
+  all('#filters button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+  all('.proj').forEach(function(p){p.classList.toggle('hide',b.dataset.f!=='all'&&p.dataset.c.indexOf(b.dataset.f)<0)})}});
+function count(el){var n=+el.dataset.n,i=0,s=Math.max(1,Math.ceil(n/40));var id=setInterval(function(){i=Math.min(n,i+s);el.textContent=i;if(i>=n)clearInterval(id)},30)}
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');var c=e.target.querySelector('[data-n]');if(c)count(c);io.unobserve(e.target)}})},{threshold:.15});
+  all('.rv').forEach(function(e){io.observe(e)});
+}else{all('.rv').forEach(function(e){e.classList.add('in')});all('[data-n]').forEach(function(e){e.textContent=e.dataset.n})}
+})();
+</script>
 </body>
 </html>

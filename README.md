@@ -1,6 +1,6 @@
-# 🌐 Athar Parvez — Personal Portfolio Website
+# Athar Parvez — Portfolio
 
-This repository hosts my personal portfolio website, powered by **GitHub Pages**.  
-It showcases my background, skills, experience, publications, and selected projects in AI/ML.  
+Static portfolio (HTML/CSS/JS, no build step) hosted on GitHub Pages.
+Live: https://atharparvezce.github.io
 
-🔗 Live Site: [https://atharparvezce.github.io](https://atharparvezce.github.io)
+Structure: `index.html` (styles + scripts inline), `assets/img/`, `assets/cv/Athar_CV.pdf`.
